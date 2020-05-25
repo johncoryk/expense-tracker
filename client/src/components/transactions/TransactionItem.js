@@ -18,7 +18,7 @@ export const TransactionItem = ({ transaction }) => {
       </span>
       <DeleteIcon
         className='delete-btn'
-        onClick={() => deleteTransaction(transaction.id)}
+        onClick={() => deleteTransaction(transaction._id)}
       >
         &times;
       </DeleteIcon>

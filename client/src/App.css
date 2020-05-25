@@ -24,7 +24,7 @@ body {
   width: 85vw;
   max-width: 600px;
   margin: 1.8rem auto;
-  padding: 2rem 2rem 3rem;
+  padding: 2rem 2rem 2.3rem;
   background-color: #eee;
   -webkit-box-shadow: 10px 10px 14px -8px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 14px -8px rgba(0, 0, 0, 0.75);
@@ -69,11 +69,30 @@ body {
 .transaction-item {
   background-color: #e0e0e0;
   padding: 0.75rem;
-  max-width: 400px;
+  max-width: 100%;
   display: grid;
   grid-template-columns: 4fr 3fr 1fr 1fr;
   grid-template-rows: auto;
   align-items: end;
+  margin-bottom: 0.4rem;
+}
+
+.add-btn {
+  width: 100%;
+  margin: 0.5rem auto 0;
+  border: 2px rgb(34, 34, 34) solid;
+  padding: 1rem;
+  background-color: inherit;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all ease 200ms;
+}
+
+.add-btn:hover {
+  -webkit-box-shadow: 10px 10px 14px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 14px -8px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 14px -8px rgba(0, 0, 0, 0.75);
 }
 
 .delete-btn {
@@ -142,7 +161,7 @@ body {
 footer {
   color: #ddd;
   text-align: center;
-  margin: 1rem 1.3rem 3.5rem;
+  margin: 1rem 3rem 3.5rem;
 }
 
 footer a {

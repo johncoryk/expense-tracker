@@ -1,7 +1,6 @@
 import React, { useState, useContext } from 'react';
 import { GlobalContext } from '../../context/GlobalState';
 
-import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
 
 export const AddTransaction = () => {
@@ -47,9 +46,9 @@ export const AddTransaction = () => {
             onChange={e => setAmount(e.target.value)}
           />
         </div>
-        <Button onClick={onSubmit} type='submit' variant='contained'>
+        <button onClick={onSubmit} type='submit' className='add-btn'>
           Add transaction
-        </Button>
+        </button>
       </form>
     </>
   );
