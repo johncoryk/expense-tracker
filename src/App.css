@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+}
+
+body {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    333deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(121, 9, 84, 0.7077205882352942) 44%,
+    rgba(20, 1, 96, 1) 100%
+  );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: rgb(34, 34, 34);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 85vw;
+  max-width: 600px;
+  margin: 1.8rem auto;
+  padding: 2rem 2rem 3rem;
+  background-color: #eee;
+  -webkit-box-shadow: 10px 10px 14px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 14px -8px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 14px -8px rgba(0, 0, 0, 0.75);
+}
+
+.main-header {
+  text-align: center;
+  margin: 4rem 1rem 0;
+  font-size: 2.3rem;
+  color: #ddd;
+  letter-spacing: 2.4px;
+}
+
+.text-input {
+  margin: 0.4rem 0 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-header {
+  margin-top: 1rem;
+  text-transform: uppercase;
+}
+
+.amount-input {
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.history-header {
+  margin-top: 1rem;
+  text-transform: uppercase;
+}
+
+.transaction-list {
+  margin-top: 0.4rem;
+  list-style: none;
+}
+
+.transaction-item {
+  background-color: #e0e0e0;
+  padding: 0.75rem;
+  max-width: 400px;
+  display: grid;
+  grid-template-columns: 4fr 3fr 1fr 1fr;
+  grid-template-rows: auto;
+  align-items: end;
+}
+
+.delete-btn {
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  transform: scale(1.1);
+}
+
+.thumbsup {
+  fill: green;
+  font-size: 1.3rem;
+  padding-bottom: 1.5px;
+}
+
+.thumbsdown {
+  fill: rgb(163, 2, 2);
+  font-size: 1.3rem;
+  padding-bottom: 1.5px;
+}
+
+.inc-exp-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /* background-color: #e0e0e0; */
+  border: 2px rgb(34, 34, 34) solid;
+  padding: 1rem;
+}
+
+.inc-exp-container div {
+  text-align: center;
+}
+
+.inc-exp-container h2 {
+  font-size: 1.4rem;
+}
+
+.inc-exp-container p {
+  font-size: 2rem;
+}
+
+.plus {
+  color: green;
+}
+
+.minus {
+  color: rgb(163, 2, 2);
+}
+
+.balance {
+  margin: 0 auto 1rem;
+  text-align: center;
+}
+
+.balance h4 {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+}
+
+.balance h1 {
+  font-size: 4.7rem;
+}
+
+@media (max-width: 480px) {
+  .balance h1 {
+    font-size: 3rem;
+  }
+
+  .inc-exp-container h2 {
+    font-size: 1rem;
+  }
+
+  .inc-exp-container p {
+    font-size: 1.2rem;
+  }
+}

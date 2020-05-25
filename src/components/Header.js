@@ -1,5 +1,9 @@
 import React from 'react';
 
 export const Header = () => {
-  return <h2>Expense Tracker</h2>;
+  return (
+    <header className='main-header'>
+      <h2>Expense Tracker</h2>
+    </header>
+  );
 };
