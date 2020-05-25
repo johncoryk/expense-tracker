@@ -139,6 +139,22 @@ body {
   font-size: 4.7rem;
 }
 
+footer {
+  color: #ddd;
+  text-align: center;
+  margin: 1rem 1.3rem 3.5rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: #ddd;
+  cursor: pointer;
+}
+
+footer a:hover {
+  color: #f26e50;
+}
+
 @media (max-width: 480px) {
   .balance h1 {
     font-size: 3rem;
@@ -150,5 +166,9 @@ body {
 
   .inc-exp-container p {
     font-size: 1.2rem;
+  }
+
+  footer {
+    font-size: 0.9rem;
   }
 }

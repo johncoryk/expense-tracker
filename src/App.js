@@ -4,6 +4,7 @@ import { Balance } from './components/Balance';
 import { IncomeExp } from './components/IncomeExp';
 import { TransactionList } from './components/transactions/TransactionList';
 import { AddTransaction } from './components/transactions/AddTransaction';
+import { Footer } from './components/Footer';
 
 import { GlobalProvider } from './context/GlobalState';
 
@@ -19,6 +20,7 @@ function App() {
         <TransactionList />
         <AddTransaction />
       </div>
+      <Footer />
     </GlobalProvider>
   );
 }
