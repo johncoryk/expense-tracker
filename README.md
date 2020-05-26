@@ -18,5 +18,6 @@ npm install
 npm start
 
 # Build for production
+cd client
 npm run build
 ```
