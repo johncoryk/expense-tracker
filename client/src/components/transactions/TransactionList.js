@@ -1,15 +1,10 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useContext } from 'react';
 import { TransactionItem } from './TransactionItem';
 
 import { GlobalContext } from '../../context/GlobalState';
 
 export const TransactionList = () => {
-  const { transactions, getTransactions } = useContext(GlobalContext);
-
-  useEffect(() => {
-    getTransactions();
-    // eslint-disable-next-line
-  }, []);
+  const { transactions } = useContext(GlobalContext);
 
   return (
     <>
@@ -19,7 +14,7 @@ export const TransactionList = () => {
           <TransactionItem
             className='transaction-item'
             transaction={transaction}
-            key={transaction._id}
+            key={transaction.id}
           />
         ))}
       </ul>

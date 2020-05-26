@@ -5,10 +5,15 @@ import DeleteIcon from '@material-ui/icons/Delete';
 import { IoIosThumbsUp } from 'react-icons/io';
 import { IoIosThumbsDown } from 'react-icons/io';
 
+// export const TransactionItem = ({ transaction }) => {
+//   const { deleteTransaction } = useContext(GlobalContext);
+
+//   const sign = transaction.amount > 0 ? '+' : '-';
+
 export const TransactionItem = ({ transaction }) => {
   const { deleteTransaction } = useContext(GlobalContext);
 
-  const sign = transaction.amount > 0 ? '+' : '-';
+  const sign = transaction.amount < 0 ? '-' : '+';
 
   return (
     <li className='transaction-item'>
@@ -18,7 +23,7 @@ export const TransactionItem = ({ transaction }) => {
       </span>
       <DeleteIcon
         className='delete-btn'
-        onClick={() => deleteTransaction(transaction._id)}
+        onClick={() => deleteTransaction(transaction.id)}
       >
         &times;
       </DeleteIcon>
