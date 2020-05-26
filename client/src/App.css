@@ -34,9 +34,27 @@ body {
 .main-header {
   text-align: center;
   margin: 4rem 1rem 0;
-  font-size: 2.3rem;
+  font-size: 2.7rem;
   color: #ddd;
-  letter-spacing: 2.4px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.main-header h4 {
+  font-weight: normal;
+  font-size: 1.3rem;
+}
+
+.note {
+  color: #ddd;
+  border: 2px solid #ddd;
+  padding: 1rem;
+  margin: 2rem auto;
+  width: 85vw;
+  max-width: 600px;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  text-align: center;
 }
 
 .text-input {

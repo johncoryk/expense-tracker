@@ -1,5 +1,6 @@
 import React from 'react';
 import { Header } from './components/Header';
+import { Note } from './components/Note';
 import { Balance } from './components/Balance';
 import { IncomeExp } from './components/IncomeExp';
 import { TransactionList } from './components/transactions/TransactionList';
@@ -20,6 +21,7 @@ function App() {
         <TransactionList />
         <AddTransaction />
       </div>
+      <Note />
       <Footer />
     </GlobalProvider>
   );
